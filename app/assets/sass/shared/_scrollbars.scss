@@ -1,0 +1,19 @@
+::-webkit-scrollbar {
+  height:               5px;
+  width:                5px;
+  &-track {
+    background:         #555555;
+    border-radius:      50px;
+  }
+  &-thumb {
+    background:         #111111;
+    border-radius:      75px;
+  }
+  &-button {
+    height:             10px;
+    background:         transparent;
+  }
+  &-corner {
+    background:         transparent;
+  }
+}

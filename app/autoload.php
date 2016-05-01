@@ -1,6 +1,6 @@
 <?php
 
-/*
+/**
  * Archigos Framework
  *
  * @author     AJ Phillips <ictcsc@gmail.com>

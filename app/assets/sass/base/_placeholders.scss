@@ -1,0 +1,13 @@
+%no-spacing {
+  margin: 0;
+  padding: 0;
+}
+
+%inline-list {
+  @extend %no-spacing;
+
+  li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,20 @@
+body::before,
+body::after {
+  content: '';
+  height: 3.5vh;
+  left: -1vw;
+  overflow: hidden;
+  position: fixed;
+  right: -1vw;
+}
+
+body::before {
+  box-shadow: 0 0 5px 1px $black,
+        inset 0 0 5px 1px $black;
+  top: 0;
+}
+
+body::after {
+  bottom: 0;
+  box-shadow: 0 0 15px 2px $black;
+}

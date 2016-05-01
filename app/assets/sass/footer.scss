@@ -1,0 +1,163 @@
+@import 'shared/reset';
+
+@import 'base/variables';
+@import 'base/placeholders';
+@import 'base/mixins';
+
+footer {
+  color: white;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  z-index: 10; }
+  footer > li {
+    cursor: default;
+    list-style: none; }
+  footer a {
+    color: white; }
+    footer a:hover {
+      color: #fff; }
+  footer img {
+    border: 0;
+    outline: none; }
+  footer .footer-menu {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    position: relative; }
+    footer .footer-menu .btn-home {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+      footer .footer-menu .btn-home img {
+        width: 2vh;
+      }
+    footer .footer-menu li {
+      position: relative;
+      height: 3vh;
+      padding: 0 10px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-flex: 0;
+      -webkit-flex-grow: 0;
+          -ms-flex-positive: 0;
+              flex-grow: 0;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      border-right: 1px solid #111111;
+      background: rgba(0, 0, 0, 0.25);
+      float: left; }
+      footer .footer-menu li.btn-home {
+        background: none; }
+      footer .footer-menu li:not(.btn-home):hover {
+        background: rgba(0, 0, 0, 0.4);
+        cursor: pointer; }
+      footer .footer-menu li:hover .column-three, footer .footer-menu li:focus .column-three {
+        position: absolute;
+        bottom: 3vh;
+        margin: 0 -50px;
+        padding: 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        z-index: 1; }
+    footer .footer-menu .column-three {
+      position: absolute;
+      bottom: -50vh;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin: 0 -50px;
+      padding: 0;
+      border: 1px solid #111111;
+      border-bottom: none;
+      border-radius: 20px 0 0 0;
+      background: rgba(0, 0, 0, 0.5);
+      -webkit-transition: bottom 0.5s ease;
+              transition: bottom 0.5s ease;
+      cursor: default;
+      z-index: -100; }
+      footer .footer-menu .column-three .profile-card {
+        position: relative;
+        height: 250px;
+        min-width: 350px;
+        margin: 0 auto;
+        padding: 20px 40px;
+        box-sizing: border-box;
+        border-radius: 20px 0 0 0;
+        background: -webkit-linear-gradient(291deg, #47455D 0%, #323045 97%);
+        background: linear-gradient(159deg, #47455D 0%, #323045 97%); }
+        footer .footer-menu .column-three .profile-card__rank {
+          position: absolute;
+          top: 20px;
+          left: -20px;
+          height: 45px;
+          width: 45px;
+          padding: 9px;
+          font-size: 2.3em;
+          color: #777777;
+          text-shadow: 0 10px 20px #000000;
+          text-align: center;
+          background: #9DD5FF;
+          box-shadow: 0 16px 30px 0 rgba(0, 0, 0, 0.5);
+          border-radius: 50%; }
+        footer .footer-menu .column-three .profile-card__title {
+          position: relative;
+          display: inline-block;
+          font-size: 3rem;
+          color: #FFFFFF;
+          letter-spacing: 0.5px;
+          line-height: 3rem;
+          text-shadow: 0 14px 40px #000000; }
+        footer .footer-menu .column-three .profile-card__date {
+          position: absolute;
+          bottom: 15px;
+          left: 15px;
+          color: rgba(255, 255, 255, 0.8);
+          font-size: 1rem;
+          letter-spacing: 3px; }
+          footer .footer-menu .column-three .profile-card__date span {
+            position: relative;
+            display: block; }
+        footer .footer-menu .column-three .profile-card__image {
+          position: absolute;
+          top: 0;
+          right: 0; }
+          footer .footer-menu .column-three .profile-card__image img {
+            height: 100%;
+            width: 100%;
+            box-shadow: -1px 1px 3px 0px #FFFFFF; }
+        footer .footer-menu .column-three .profile-card__details {
+          position: absolute;
+          bottom: 15px;
+          right: 15px;
+          font-size: 1rem;
+          letter-spacing: 2px;
+          text-transform: uppercase; }
+          footer .footer-menu .column-three .profile-card__details a {
+            display: block;
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none; }
+            footer .footer-menu .column-three .profile-card__details a:hover {
+              color: white; }
+  footer .copyright {
+    list-style: none; }

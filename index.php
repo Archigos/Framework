@@ -7,6 +7,9 @@
  * @copyright  Copyright (c) 2012 - 2016 ICT/CSC
  */
 
+use Archigos\Framework\Config;
+use Archigos\Framework\Templates;
+
 // User Editable Section - Remaining Variables in '$folderName/uservars.php'
   $folderName   = 'app';
   $initScript   = 'init.php';
@@ -24,5 +27,13 @@
   unset($folderName, $initScript, $startup, $location);
 // Initialize Framework
 
+$tpl->load('header');
+$tpl->assign('title', Config::get('framework/name'));
+$tpl->display();
+$tpl->reset();
+
+$tpl->load('topnav');
+
+$tpl->footer();
 
 ?>

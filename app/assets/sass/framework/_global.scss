@@ -1,0 +1,13 @@
+@import '../shared/reset';
+@import '../base/variables';
+@import '../base/placeholders';
+
+body {
+  background: $body-background;
+  padding-top: calc(3.5vh + 1px);
+  position: absolute;
+  z-index: 1;
+}
+
+@import '../shared/threeD';
+@import '../shared/scrollbars';

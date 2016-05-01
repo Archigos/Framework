@@ -1,0 +1,13 @@
+@mixin square($int) {
+  height: $int;
+  width: $int;
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+@mixin size($h, $w) {
+  height: $h;
+  width: $w;
+}

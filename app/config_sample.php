@@ -14,7 +14,8 @@
  return $GLOBALS['config'] = [
   'framework'             => [
     'name'                => "Archigos' Framework",
-    'directory'           => HERE
+    'directory'           => HERE,
+    'version'             => $frameworkVersion
   ],
   'database'              => [
     'type'                => 'sqlite',
